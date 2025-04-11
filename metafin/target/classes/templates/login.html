@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metafin</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <h1>MetaFin</h1>
+    </header>
+    <form action="/login" method="post">
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="senha" placeholder="Senha" />
+        <a href="/esqueceuSenha">Esqueci a senha</a>
+         <a href="/cadastro">nao tenho conta</a>
+        <button type="submit">Entrar</button>
+        <div th:text="${mensagem}" style="color: red"></div>
+    </form>
+  </body>
+</html>

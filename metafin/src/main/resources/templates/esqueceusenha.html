@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci a Senha</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="esqueceusenha.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="/"><img src="assets/CaretLeft.svg" alt="" id="voltar"></a>
+        <h1>Esqueci a Senha</h1>
+    </header>
+
+    <form action="/NovaSenha" method="post">
+            <input type="email" name="email" placeholder="Email" class="form">
+        <div class="button">
+            <button type="submit">Enviar Email</button>
+	           
+        </div>
+
+    </form>
+     <div th:text="${mensagem}" style="color:red"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metafin</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="historico.css">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <h1>MetaFin</h1>
+  <h1>historico</h1>
+<a href="/custo">custo</a></br>
+<a href="/venda">venda</a>
+<table>
+<tr>
+<th>tipo</th>
+<th>nome</th>
+<th>preco</th>
+</tr>
+<tr th:each="item: ${listarItens}">
+<td th:text="${item.tipo}"></td>
+<td th:text="${item.nome}"></td>
+<td th:text="${item.preco}"></td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</body>
+
+</html>

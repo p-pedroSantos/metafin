@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metafin</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+      <h1>Outubro</h1>
+    </header>
+    
+    <div class="Card">
+        <h2>Este Mês</h2>
+        <div class="container-renda">
+          <p class="Renda">Ganhos:.............R$ {insira a variavel}</p>
+          <p class="Renda">Gasto:.............R$ {insira a variavel}</p>
+          <p class="Renda">Lucro:.............R$ {insira a variavel}</p> 
+        </div>
+
+    </div>
+
+    <div class="Card">
+        <h2>Meta Atual</h2>
+        <div id="myProgress">
+            <div id="myBar">0%</div>
+        </div>
+    </div>
+    
+  <div class="Card">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <footer>
+    <div class="container">
+      <a href="/"><img src="assets/House.svg" alt=""></a>
+      <a href="/"><img src="assets/Notepad.svg" alt=""></a>
+      <a href="/"><img src="assets/UserCircle.svg" alt=""></a>
+    </div>
+
+    
+  </footer>
+  
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Últimos 6 meses',
+      backgroundColor: '#224E77',
+      borderColor: '#224E77',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {}
+  };
+</script>
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+<script>
+    var perct = 15
+        var barra = document.querySelector('#myBar')
+        barra.style.width = perct + '%'
+        barra.innerHTML = perct + '%'
+</script>
+</html>

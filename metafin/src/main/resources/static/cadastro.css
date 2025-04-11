@@ -1,0 +1,80 @@
+/* PRÉ-SETS */
+
+:root{
+    --primary:#224E77;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 4%;
+}
+
+h1{
+    margin-left: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+#voltar{
+    padding: 8px;
+}
+
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+input, button{
+
+    padding: 18px;
+    width: 84%;
+    margin: auto;
+
+    border: none;
+    border-radius: 16px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* INPUT */
+
+input{
+    margin-top: 24px;
+}
+
+input:focus{
+    outline: 0;
+}
+
+/* BOTÃO */
+
+button{
+    background-color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+
+    padding: 14px;
+    margin-top: 16%;
+    width: 92%;
+
+    box-shadow: none;
+}
+
+button:hover{
+    transition: 30ms;
+    background-color: #ffffff50;
+    color: white;
+}

@@ -1,0 +1,107 @@
+:root{
+    --primary: #224E77;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+
+    background-color:var(--primary);
+    padding: 24px;
+    
+    color: white;
+    font-size: 24px;
+    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+header h1{
+    padding-left: 4%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+/* botão adicionar */
+
+.container-add{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-click{
+    display: flex;
+}
+
+.click{
+    margin: auto;
+    margin-top: 4%;
+
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0.8em;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: var(--primary);
+
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    
+    transition: 0.1s;
+}
+
+.newClick{
+    background-color: var(--primary);
+    color: white;
+    
+}
+
+.link{
+    background-color: var(--primary);
+    padding: 12px;
+    margin-top: 2%;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    
+    transition: 0.3s;
+}
+
+.link:hover{
+    transform: scale(1.1);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin-top: 10em;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.newlist{
+    transform: scaleY(1);
+}
+
+.newBG{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+

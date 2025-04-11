@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="perfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="/"><img src="assets/CaretLeft.svg" alt="" id="voltar"></a>
+        <h1>Perfil</h1>
+    </header>
+    
+    <div class="container-user" th:each="usu : ${usuario}">
+        <h2 class="name-user" th:text="${usu.nome}"></h2>
+    </div>
+    
+    <div class="container-button">
+        <a href="/adm/mudarSenha">mudar senha</a>
+        <br>
+
+         <a href="/sair">sair</a>
+    </div>
+    <footer>
+        <div class="container">
+          <a href="/"><img src="assets/House.svg" alt=""></a>
+          <a href="/"><img src="assets/Notepad.svg" alt=""></a>
+          <a href="/"><img src="assets/UserCircle.svg" alt=""></a>
+        </div>
+      </footer>
+</body>
+</html>
